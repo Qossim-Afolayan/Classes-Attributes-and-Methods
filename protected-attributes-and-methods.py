@@ -52,13 +52,12 @@ print(iphone._firmware)
 
 class Book():
     def __init__(self, author, publisher, page_count):
-        self.author = author 
-        self.publisher = publisher
+        self._author = "Grant Cardone"
+        self._publisher = "10X Enterprises"
         self.page_count = page_count
 
     def copyright(self):
-        self._author = "Grant Cardone"
-        self._publisher = "10X Enterprises"
+        return Copyright self.author, self.page_count
 
     def rip_in_half(self):
         if page_count > 1:
