@@ -57,13 +57,14 @@ class Book():
         self.page_count = page_count
 
     def copyright(self):
-        return Copyright self.author, self.page_count
+        return f"Copyright {self._author}, {self._publisher}"
 
     def rip_in_half(self):
-        if page_count > 1:
-            return page_count / 2
+        if self.page_count > 1:
+            self.page_count = self.page_count / 2
+            return self.page_count
 
-        page_count = 0
+        self.page_count = 0
 
 
 
